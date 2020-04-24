@@ -1,6 +1,7 @@
 # EtherWi-Fi
 
 ## Overal introduction
+For Windows ONLY.
 etherwifi.py connects Wi-Fi and Ethernet, periodically logging in.
 Administrator needed to disable or enable interfaces.
 
