@@ -274,6 +274,7 @@ def gui_print_onoff(wifi, ether):
 def work_thrd(q_sub, wifi_on, ether_on):
     """ work thread """
     q_evt = '1'
+    global INTERFACE_ARR
     while True: # hell mode
         if len(q_evt) > 0:
             if q_evt == 'q':
@@ -285,6 +286,7 @@ def work_thrd(q_sub, wifi_on, ether_on):
                     wifi_on = True
                 if q_evt in ('e', 'b'):
                     ether_on = True
+            INTERFACE_ARR = interfaces_get()
             # q_evt to be reset later
             if not intf_dis_connect_eth(INTERFACE_ARR, ether_on):
                 gui_print('Ethernet failure not preventing WIFI operations...')
