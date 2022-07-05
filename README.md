@@ -1,4 +1,10 @@
-# EtherWi-Fi
+# EtherWi-Fi standalone
+
+getwifi-haizhi.py is a standalone python from Haizhi. It integrates route setting and uses easier web page interaction, which probably supports non-Cisco AP's and is a better sulotion.
+Change "user" and "pass" in the file to authenticate from AP.
+No GUI, however.
+
+# EtherWi-Fi classic
 
 ## Overal introduction
 For Windows ONLY.
